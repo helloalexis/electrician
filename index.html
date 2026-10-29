@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Electrical WA | Perth Metro Electrician</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#dc2626', // Red
+                            dark: '#b91c1c',
+                            light: '#fef2f2',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-neutral-800 font-sans antialiased selection:bg-brand selection:text-white">
+
+    <!-- TOP BAR -->
+    <div class="bg-neutral-900 text-neutral-300 text-xs py-2 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-location-dot text-brand"></i>
+                <span>Based in WA, servicing Perth metro</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+61413291622" class="hover:text-white transition flex items-center space-x-1">
+                    <i class="fa-solid fa-phone text-brand"></i>
+                    <span>+61 413 291 622</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-neutral-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-black tracking-tight text-neutral-900 flex items-center space-x-2">
+                <span class="w-8 h-8 rounded bg-brand text-white flex items-center justify-center text-sm font-bold shadow-md shadow-brand/20">
+                    <i class="fa-solid fa-bolt"></i>
+                </span>
+                <span>EXCEL ELECTRICAL <span class="text-brand">WA</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-600">
+                <a href="#services" class="hover:text-brand transition">Services</a>
+                <a href="#about" class="hover:text-brand transition">About Us</a>
+                <a href="#work" class="hover:text-brand transition">Our Work</a>
+                <a href="#contact" class="hover:text-brand transition">Contact</a>
+            </nav>
+
+            <a href="tel:+61413291622" class="hidden md:inline-flex bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition shadow-md shadow-brand/20">
+                Call Now
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-neutral-700 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-neutral-100 px-6 py-4 space-y-3 font-medium text-neutral-700">
+            <a href="#services" class="block hover:text-brand">Services</a>
+            <a href="#about" class="block hover:text-brand">About Us</a>
+            <a href="#work" class="block hover:text-brand">Our Work</a>
+            <a href="#contact" class="block hover:text-brand">Contact</a>
+            <div class="pt-2">
+                <a href="tel:+61413291622" class="block text-center w-full bg-brand text-white font-semibold py-2.5 rounded-lg">Call +61 413 291 622</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="py-20 lg:py-28 bg-gradient-to-b from-neutral-50 to-white">
+        <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-brand-light text-brand px-3 py-1.5 rounded-full text-xs font-semibold">
+                    <span>⚡ Reliable. Local. Professional.</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+                    Residential & Commercial <span class="text-brand">Electrical Works</span>
+                </h1>
+
+                <p class="text-lg text-neutral-600 leading-relaxed max-w-xl">
+                    Whether it’s a small fix or a bigger project, we pride ourselves on quality workmanship, honest advice, and showing up when we say we will.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                    <a href="#contact" class="bg-brand hover:bg-brand-dark text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-brand/20 text-center">
+                        Request a Free Quote
+                    </a>
+                    <a href="tel:+61413291622" class="bg-white hover:bg-neutral-50 border border-neutral-300 text-neutral-800 font-semibold px-8 py-4 rounded-xl transition text-center flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-phone text-brand"></i>
+                        <span>+61 413 291 622</span>
+                    </a>
+                </div>
+
+                <!-- Community Social Proof -->
+                <div class="pt-6 flex items-center space-x-6 text-sm text-neutral-500 border-t border-neutral-200">
+                    <div><strong class="text-neutral-900 font-bold">386</strong> Followers</div>
+                    <div><strong class="text-neutral-900 font-bold">64</strong> Following</div>
+                    <div><strong class="text-neutral-900 font-bold">Perth</strong> Based & Serviced</div>
+                </div>
+            </div>
+
+            <!-- Hero Image (Human/Electrician Photo from Unsplash) -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80" 
+                         alt="Electrician working" 
+                         class="w-full h-[400px] object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/60 via-transparent to-transparent flex items-end p-6">
+                        <div class="text-white">
+                            <p class="text-xs font-semibold uppercase tracking-wider text-brand-light">Trusted Local Expert</p>
+                            <p class="text-lg font-bold">Quality Workmanship Guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-20 bg-white border-t border-neutral-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest text-brand uppercase">What We Do</span>
+                <h2 class="text-3xl font-bold text-neutral-900 mt-2">Professional Electrical Services</h2>
+                <p class="text-neutral-600 text-sm mt-2">From everyday residential repairs to complex commercial installations across Perth.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">Residential Works</h3>
+                    <p class="text-neutral-600 text-sm leading-relaxed mb-4">
+                        Lighting upgrades, safety switch (RCD) testing, power points, smoke alarms, and general household repairs.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">Commercial Projects</h3>
+                    <p class="text-neutral-600 text-sm leading-relaxed mb-4">
+                        Office fit-outs, data cabling, regular maintenance, switchboard servicing, and compliance testing for businesses.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-brand-light text-brand rounded-xl flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-3">Repairs & Small Fixes</h3>
+                    <p class="text-neutral-600 text-sm leading-relaxed mb-4">
+                        Quick diagnostics, fault finding, flickering lights, and prompt repairs handled with honesty and care.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY / IMAGES SECTION -->
+    <section id="work" class="py-20 bg-neutral-50 border-t border-neutral-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest text-brand uppercase">Our Standards in Action</span>
+                <h2 class="text-3xl font-bold text-neutral-900 mt-2">Clean, Safe & Reliable Work</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-6">
+                <div class="rounded-xl overflow-hidden shadow-md bg-white">
+                    <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=800&q=80" alt="Switchboard" class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h4 class="font-bold text-neutral-900">Switchboard Upgrades</h4>
+                        <p class="text-xs text-neutral-500 mt-1">Perth Residential</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md bg-white">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Cabling" class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h4 class="font-bold text-neutral-900">Commercial Infrastructure</h4>
+                        <p class="text-xs text-neutral-500 mt-1">WA Business Properties</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md bg-white">
+                    <img src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&w=800&q=80" alt="Lighting" class="w-full h-60 object-cover hover:scale-105 transition duration-300">
+                    <div class="p-4">
+                        <h4 class="font-bold text-neutral-900">Lighting & Fixtures</h4>
+                        <p class="text-xs text-neutral-500 mt-1">Quality Finishing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / PROMISE -->
+    <section id="about" class="py-20 bg-white border-t border-neutral-100">
+        <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-xs font-bold tracking-widest text-brand uppercase">Why Choose Excel Electrical WA</span>
+                <h2 class="text-3xl font-bold text-neutral-900 mt-2 mb-6">Honest Advice. Showing Up When We Say We Will.</h2>
+                <p class="text-neutral-600 mb-6 leading-relaxed">
+                    We know how frustrating it is when tradespeople don’t show up or give confusing advice. That’s why we built Excel Electrical WA on straightforward communication, punctuality, and pride in our craft.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3 text-neutral-800 font-medium">
+                        <i class="fa-solid fa-circle-check text-brand"></i>
+                        <span>Punctual and respectful of your property</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-neutral-800 font-medium">
+                        <i class="fa-solid fa-circle-check text-brand"></i>
+                        <span>Upfront pricing and honest recommendations</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-neutral-800 font-medium">
+                        <i class="fa-solid fa-circle-check text-brand"></i>
+                        <span>Fully licensed and servicing Perth metro</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-neutral-900 text-white p-8 rounded-2xl shadow-xl">
+                <h3 class="text-2xl font-bold mb-4">Get in Touch Directly</h3>
+                <p class="text-neutral-400 text-sm mb-6">Have an emergency, a small repair, or planning a larger electrical project? Call us directly or send a message.</p>
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone text-brand"></i>
+                        <span class="font-bold">+61 413 291 622</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-location-dot text-brand"></i>
+                        <span>Based in WA, Servicing Perth Metro</span>
+                    </div>
+                </div>
+                <a href="tel:+61413291622" class="block text-center bg-brand hover:bg-brand-dark text-white font-bold py-3 rounded-xl transition">
+                    Call +61 413 291 622
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-neutral-50 border-t border-neutral-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold tracking-widest text-brand uppercase">Send a Message</span>
+                <h2 class="text-3xl font-bold text-neutral-900 mt-2">Request a Quote</h2>
+            </div>
+
+            <div class="bg-white p-8 sm:p-10 rounded-2xl shadow-sm border border-neutral-200">
+                <form onsubmit="handleSubmit(event)" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-neutral-600 mb-2">Your Name</label>
+                            <input type="text" required class="w-full bg-neutral-50 border border-neutral-300 rounded-xl px-4 py-3 text-neutral-900 focus:outline-none focus:border-brand transition" placeholder="John Smith">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-neutral-600 mb-2">Phone Number</label>
+                            <input type="tel" required class="w-full bg-neutral-50 border border-neutral-300 rounded-xl px-4 py-3 text-neutral-900 focus:outline-none focus:border-brand transition" placeholder="+61 400 000 000">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-neutral-600 mb-2">How can we help?</label>
+                        <textarea rows="4" required class="w-full bg-neutral-50 border border-neutral-300 rounded-xl px-4 py-3 text-neutral-900 focus:outline-none focus:border-brand transition" placeholder="Describe your electrical project or repair..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand hover:bg-brand-dark text-white font-bold py-4 rounded-xl transition shadow-lg shadow-brand/20">
+                        Send Enquiry
+                    </button>
+                    <p id="success-msg" class="hidden text-center text-emerald-600 font-semibold text-sm">Thanks! Your message has been sent successfully.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-neutral-900 text-neutral-400 py-10 text-sm">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-white font-bold">
+                Excel Electrical WA
+            </div>
+            <div>
+                &copy; 2026 Excel Electrical WA. All rights reserved.
+            </div>
+            <div class="flex space-x-4 text-white">
+                <a href="tel:+61413291622" class="hover:text-brand transition"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            e.target.reset();
+            const msg = document.getElementById('success-msg');
+            msg.classList.remove('hidden');
+            setTimeout(() => msg.classList.add('hidden'), 5000);
+        }
+    </script>
+</body>
+</html>
